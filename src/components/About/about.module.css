@@ -1,0 +1,129 @@
+.about{
+    overflow: hidden;
+    position: relative;
+    padding: 140px 5% 70px 5%;
+    height: 100vh;
+}
+.about::before{
+    content: "";
+    height: 107px;
+    width: 7px;
+    background: #69d44e;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(-50%);
+}
+.ellipse{
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.ellipse2{
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    transform: rotate(-90deg);
+    z-index: -1;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    width: 48%;
+}
+.center{
+    position: relative;
+    text-align: center;
+}
+.subheading{
+    font-size: 30px;
+    margin: 0;
+}
+.heading{
+    font-size: 60px;
+    color: #69e44d;
+    margin: 0;
+}
+.sidebar{
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 2;
+}
+.subtxt{
+    font-weight: bold;
+    margin-left: 30%;
+}
+.btnblock{
+    margin-left: 30%;
+    margin-top: 30px;
+}
+.link{
+    margin-right: 20px;
+}
+.subblock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    animation: rotate-acw 3s linear infinite both;
+}
+@keyframes rotate-acw{
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.imgsmall{
+    width: 80px;
+    height: 80px;
+    animation: rotate-cw 3s linear infinite both;
+}
+@keyframes rotate-cw{
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+@media screen and (max-width:750px){
+    .center{
+        display: none;
+    }
+    .item{
+        width: 100%;
+    }
+}
+@media screen and (max-width:560px){
+    .linkimg{
+        width: 110px;
+    }
+}
+@media screen and (max-width:500px){
+    .heading{
+        font-size: 40px;
+    }
+    .sidebar{
+        width: 80%;
+        margin-left: 0;
+    }
+    .subtxt{
+        margin-left: 0;
+    }
+    .btnblock{
+        margin-left: 0;
+    }
+}
